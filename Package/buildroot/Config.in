@@ -1,0 +1,5 @@
+config BR2_PACKAGE_IOPCVM
+	bool "iopcvm"
+	select BR2_PACKAGE_LIBIOPCCOMMON
+	help
+	  IOPC message queue util.
