@@ -31,6 +31,11 @@ def MAIN_INSTALL(args):
     iopc.installBin(args["pkg_name"], ops.path_join(output_dir, "iopcvm.elf"), "usr/bin")
     return False
 
+def MAIN_SDKENV(args):
+    set_global(args)
+
+    return False
+
 def MAIN_CLEAN_BUILD(args):
     output_dir = args["output_path"]
     return False
